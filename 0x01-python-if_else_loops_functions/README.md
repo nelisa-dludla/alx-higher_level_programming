@@ -91,4 +91,4 @@ This function in C inserts a number into a sorted singly linked list.
 
 ## Notes
 
-These solutions are provided as examples of file I/O operations in C programming and serve for educational purposes. Feel free to explore, modify, and experiment with the code to enhance your understanding of file operations in C.
+These solutions are provided as examples of if/else statements, loops and functions in Python and serve for educational purposes. Feel free to explore, modify, and experiment with the code to enhance your understanding of if/else statements, loops and functions in Python.
