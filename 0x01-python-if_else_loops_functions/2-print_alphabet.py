@@ -6,4 +6,4 @@ in lowercase
 '''
 
 for num in range(97, 123):
-    print(f'{chr(num)}', end="")
+    print('{}'.format(chr(num)), end="")
