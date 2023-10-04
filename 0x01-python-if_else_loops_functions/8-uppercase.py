@@ -18,4 +18,4 @@ def uppercase(str):
         else:
             newStr += c
 
-    print(newStr)
+    print('{}'.format(newStr))
