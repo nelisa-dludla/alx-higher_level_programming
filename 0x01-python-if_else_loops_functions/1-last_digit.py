@@ -9,8 +9,11 @@ more than 5 or 0
 
 import random
 number = random.randint(-10000, 10000)
-strNum = str(number)
-lastDigit = int(strNum[-1])
+
+if number > 0:
+    lastDigit = abs(number) % 10
+else:
+    lastDigit = (abs(number) % 10) * -1
 
 print(f'Last digit of {number} is {lastDigit}', end=' ')
 
