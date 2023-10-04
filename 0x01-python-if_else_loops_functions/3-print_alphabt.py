@@ -9,4 +9,4 @@ for num in range(97, 123):
     if chr(num) == 'e' or chr(num) == 'q':
         pass
     else:
-        print(chr(num), end="")
+        print('{}'.format(chr(num)), end="")
