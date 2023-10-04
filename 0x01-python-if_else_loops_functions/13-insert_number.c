@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
-* insert_node - Function inserts a number into a singly linked list
-* @head: Head node of a singly linked list
-* @number: Number to be inserted into singly linked list
-* Return: Address of new node (success) / NULL (fail)
-*/
+ * insert_node - Function inserts a number into a singly linked list
+ * @head: Head node of a singly linked list
+ * @number: Number to be inserted into singly linked list
+ * Return: Address of new node (success) / NULL (fail)
+ */
 
 listint_t *insert_node(listint_t **head, int number)
 {
@@ -21,6 +21,13 @@ listint_t *insert_node(listint_t **head, int number)
 
     current = *head;
 
+    if (current == NULL || current->n >= number)
+    {
+        newNode->next = current;
+        *head = newNode;
+        return (newNode);
+    }
+
     while (current != NULL && current->n < number)
     {
         prev = current;
@@ -29,5 +36,5 @@ listint_t *insert_node(listint_t **head, int number)
 
     prev->next = newNode;
     newNode->next = current;
-    return newNode;
+    return (newNode);
 }
