@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    """Function does some Maths, and prints the result"""
+    """Does addition, substraction, multiplication and division"""
     from calculator_1 import add, sub, mul, div
     a = 10
     b = 5
