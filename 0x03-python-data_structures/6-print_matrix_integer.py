@@ -4,7 +4,7 @@ Prints a matrix of integers
 '''
 
 
-def print_matrix_integer(matrix = [[]]):
+def print_matrix_integer(matrix=[[]]):
     for row in matrix:
         for element in row:
             if element != row[-1]:
