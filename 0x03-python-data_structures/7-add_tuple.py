@@ -24,7 +24,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
         listB[0] = tuple_b[0]
         listB[1] = tuple_b[1]
 
-
     value1 = listA[0] + listB[0]
     value2 = listA[1] + listB[1]
 
