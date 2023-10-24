@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 '''
-Class defines a square
+Class define a square
 '''
+
 
 class Square:
     '''
     This class defines a square
     '''
-    pass
+    def __init__(self):
+        pass
