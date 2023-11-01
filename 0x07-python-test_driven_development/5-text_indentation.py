@@ -28,4 +28,4 @@ def text_indentation(text):
         if currentChar in punctuation:
             print('\n')
 
-        lastChar = currentChar 
+        lastChar = currentChar

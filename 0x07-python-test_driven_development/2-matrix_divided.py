@@ -9,11 +9,14 @@ def matrix_divided(matrix, div):
     Divides all elements of a matrix by a number
 
     Args:
-        matrix (list of lists): The matrix to be divided. Each element should be an integer or float.
+        matrix (list of lists): The matrix to be divided.
+        Each element should be an integer or float.
+
         div (int/float): The number to divide each element of the matrix by.
 
     Returns:
-        list of lists: A new matrix with elements divided by the specified number.
+        list of lists: A new matrix with elements divided by
+        the specified number.
 
     Raises:
         TypeError:
@@ -24,22 +27,23 @@ def matrix_divided(matrix, div):
             If div is zero
     '''
 
+    errMsg1 = 'matrix must be a matrix (list of lists) of integers/floats'
     if not isinstance(matrix, list):
-        raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
+        raise TypeError(errMsg1)
 
     if isinstance(matrix[0], list):
         rowLength = len(matrix[0])
 
     for row in matrix:
         if not isinstance(row, list):
-            raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
+            raise TypeError(errMsg1)
 
         if len(row) != rowLength:
             raise TypeError('Each row of the matrix must have the same size')
 
         for ele in row:
             if not isinstance(ele, (int, float)):
-                raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
+                raise TypeError(errMsg1)
 
     if div == 0:
         raise ZeroDivisionError('division by zero')
