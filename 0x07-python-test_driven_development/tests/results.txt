@@ -1,0 +1,51 @@
+Trying:
+    text_indentation = __import__('5-text_indentation').text_indentation
+Expecting nothing
+ok
+Trying:
+    text_indentation('Lorem ipsum dolor. sit amet: consectetur? adipiscing elit')
+Expecting:
+    Lorem ipsum dolor.
+    <BLANKLINE>
+    sit amet:
+    <BLANKLINE>
+    consectetur?
+    <BLANKLINE>
+    adipiscing elit
+**********************************************************************
+File "./tests/5-text_indentation.txt", line 3, in 5-text_indentation.txt
+Failed example:
+    text_indentation('Lorem ipsum dolor. sit amet: consectetur? adipiscing elit')
+Expected:
+    Lorem ipsum dolor.
+    <BLANKLINE>
+    sit amet:
+    <BLANKLINE>
+    consectetur?
+    <BLANKLINE>
+    adipiscing elit
+Got:
+    Lorem ipsum dolor.
+    <BLANKLINE>
+     sit amet:
+    <BLANKLINE>
+     consectetur?
+    <BLANKLINE>
+     adipiscing elit
+Trying:
+    text_indentation(12345)
+Expecting:
+    Traceback (most recent call last):
+    TypeError: text must be a string
+ok
+Trying:
+    text_indentation('Hello World')
+Expecting:
+    Hello World
+ok
+**********************************************************************
+1 items had failures:
+   1 of   4 in 5-text_indentation.txt
+4 tests in 1 items.
+3 passed and 1 failed.
+***Test Failed*** 1 failures.
