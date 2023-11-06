@@ -1,0 +1,15 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+>>> BaseGeometry().integer_validator("Naruto", 7) 
+
+>>> BaseGeometry().integer_validator("Naruto", "Uzumaki")
+Traceback (most recent call last):
+TypeError: Naruto must be an integer
+
+>>> BaseGeometry().integer_validator("Naruto", -7)
+Traceback (most recent call last):
+ValueError: Naruto must be greater than 0
+
+>>> BaseGeometry().integer_validator("Naruto", 0)
+Traceback (most recent call last):
+ValueError: Naruto must be greater than 0
