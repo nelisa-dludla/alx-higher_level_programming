@@ -1,7 +1,7 @@
 #!usr/bin/python3
-'''This contains an implementation of lookup'''
+'''This contains an implementation of lookup module'''
 
 
 def lookup(obj):
-    '''The lookup implementation'''
+    '''The lookup implementation module'''
     return dir(obj)
