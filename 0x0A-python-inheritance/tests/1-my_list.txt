@@ -1,0 +1,33 @@
+>>> myList = __import__('1-my_list').MyList
+
+>>> theList = myList([5, 4, 3, 2, 1])
+>>> theList.print_sorted()
+[1, 2, 3, 4, 5]
+
+>>> theList = myList([1, 2, 5, 3, 4])
+>>> theList.print_sorted()
+[1, 2, 3, 4, 5]
+
+>>> theList = myList([1, 2, 3, 4, 5])
+>>> theList.print_sorted()
+[1, 2, 3, 4, 5]
+
+>>> theList = myList([])
+>>> theList.print_sorted()
+[]
+
+>>> theList = myList([-5, -4, -3, -2, -1])
+>>> theList.print_sorted()
+[-5, -4, -3, -2, -1]
+
+>>> theList = myList([-1, -2, -5, -3, -4])
+>>> theList.print_sorted()
+[-5, -4, -3, -2, -1]
+
+>>> theList = myList([-1, -2, -3, -4, -5])
+>>> theList.print_sorted()
+[-5, -4, -3, -2, -1]
+
+>>> theList = myList([1, 1, 1, 1, 1])
+>>> theList.print_sorted()
+[1, 1, 1, 1, 1]
