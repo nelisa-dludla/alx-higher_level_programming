@@ -1,5 +1,5 @@
 #!usr/bin/python3
-'''Contains the function lookup(obj)'''
+'''This module contains the function lookup'''
 
 
 def lookup(obj):
