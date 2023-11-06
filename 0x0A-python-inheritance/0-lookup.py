@@ -1,7 +1,7 @@
-#!usr/bin/python3
-'''Implementation of lookup module'''
+#!/usr/bin/python3
+'''This module contains an implementation of the lookup method'''
 
 
 def lookup(obj):
-    '''lookup module'''
+    '''Returns a list of available attributes and methods of an object'''
     return dir(obj)
