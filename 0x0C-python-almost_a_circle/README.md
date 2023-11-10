@@ -4,8 +4,8 @@ This project consists of Python classes that are part of a larger framework. The
 
 ## Files
 ```
-- models/base.py: Defines the Base class with ID management and utility methods.
-- models/rectangle.py: Implements the Rectangle class, inheriting from the Base class.
-- models/square.py: Introduces the Square class, also inheriting from the Rectangle class.
-- tests/: Contains unit tests to ensure the functionality and correctness of the classes.
+models/base.py: Defines the Base class with ID management and utility methods.
+models/rectangle.py: Implements the Rectangle class, inheriting from the Base class.
+models/square.py: Introduces the Square class, also inheriting from the Rectangle class.
+tests/: Contains unit tests to ensure the functionality and correctness of the classes.
 ```
