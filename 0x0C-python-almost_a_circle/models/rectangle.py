@@ -4,7 +4,7 @@ Contains the class Rectangle
 '''
 
 from .base import Base
-import json
+
 
 class Rectangle(Base):
     '''
@@ -66,10 +66,10 @@ class Rectangle(Base):
             raise ValueError('y must be >= 0')
 
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
@@ -173,9 +173,8 @@ class Rectangle(Base):
         '''
         Prints Rectangle to stdout
         '''
-
         for _ in range(self.__y):
-                print()
+            print()
 
         for _ in range(self.__height):
             for _ in range(self.__x):
@@ -189,7 +188,6 @@ class Rectangle(Base):
         '''
         Assigns an argument to each attribute
         '''
-
         if args:
             self.id = args[0]
 
@@ -207,14 +205,27 @@ class Rectangle(Base):
         else:
             for key in kwargs:
                 setattr(self, key, kwargs[key])
+
     def to_dictionary(self):
         '''
         Returns the dictionary representation of Rectangle
         '''
-        return {"x": self.__x, "y": self.__y, "id": self.id, "height": self.__height, "width": self.__width}
+        x = f'{self.__x}'
+        y = f'{self.__y}'
+        id = f'{self.id}'
+        height = f'{self.__height}'
+        width = f'{self.__width}'
+
+        return {"x": x, "y": y, "id": id, "height": height, "width": width}
 
     def __str__(self):
         '''
         Returns the string representation of Rectangle
         '''
-        return f'[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}'
+        x = f'{self.__x}'
+        y = f'{self.__y}'
+        id = f'{self.id}'
+        height = f'{self.__height}'
+        width = f'{self.__width}'
+
+        return f'[Rectangle] ({id}) {x}/{y} - {width}/{height}'

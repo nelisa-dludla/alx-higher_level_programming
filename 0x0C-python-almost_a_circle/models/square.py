@@ -5,6 +5,7 @@ Contains the class Square
 
 from .rectangle import Rectangle
 
+
 class Square(Rectangle):
     '''
     A child class that inherits from the Rectangle class
@@ -16,7 +17,9 @@ class Square(Rectangle):
         id (int): The id of the instance
 
     Methods:
-        __init__(self, size, x=0, y=0, id=None): Initializes a new Square instance
+        __init__(self, size, x=0, y=0, id=None): Initializes a
+        new Square instance
+
         size(self): Getter method for size
         size(self, value): Setter method for size
         update(self, *args, **kwargs): Assigns an argument to each attribute
