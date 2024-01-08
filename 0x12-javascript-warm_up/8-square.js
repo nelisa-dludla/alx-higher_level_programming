@@ -9,7 +9,7 @@ if (!Number.isNaN(size)) {
   while (i < size) {
     let j = 0;
     while (j < size) {
-      process.stdout.write('#');
+      process.stdout.write('X');
       j++;
     }
     console.log();
