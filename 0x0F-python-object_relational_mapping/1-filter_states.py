@@ -7,15 +7,13 @@ from the database hbtn_0e_0_usa
 import MySQLdb
 import sys
 
-mysql_username = sys.argv[1]
-mysql_password = sys.argv[2]
-database_name = sys.argv[3]
-host = 'localhost'
-port = 3306
 
-
-def main():
-    '''This is the main function of the program'''
+if __name__ == '__main__':
+    mysql_username = sys.argv[1]
+    mysql_password = sys.argv[2]
+    database_name = sys.argv[3]
+    host = 'localhost'
+    port = 3306
 
     db = MySQLdb.connect(
             host=host,
@@ -41,7 +39,3 @@ def main():
 
     cursor.close()
     db.close()
-
-
-if __name__ == '__main__':
-    main()
