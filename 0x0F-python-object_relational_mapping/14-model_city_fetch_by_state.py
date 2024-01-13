@@ -33,7 +33,6 @@ if __name__ == '__main__':
             session.query(City, State)
             .filter(City.state_id == State.id)
             .order_by(City.id)
-            .limit(15)
             .all()
             )
 
