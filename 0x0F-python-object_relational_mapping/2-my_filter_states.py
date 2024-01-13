@@ -7,16 +7,14 @@ in the states table of hbtn_0e_0_usa where name matches the argument.
 import MySQLdb
 import sys
 
-mysql_username = sys.argv[1]
-mysql_password = sys.argv[2]
-database_name = sys.argv[3]
-state_name_searched = sys.argv[4]
-host = 'localhost'
-port = 3306
 
-
-def main():
-    '''This is the main program'''
+if __name__ == '__main__':
+    mysql_username = sys.argv[1]
+    mysql_password = sys.argv[2]
+    database_name = sys.argv[3]
+    state_name_searched = sys.argv[4]
+    host = 'localhost'
+    port = 3306
 
     db = MySQLdb.connect(
             host=host,
@@ -41,7 +39,3 @@ def main():
 
     cursor.close()
     db.close()
-
-
-if __name__ == '__main__':
-    main()
