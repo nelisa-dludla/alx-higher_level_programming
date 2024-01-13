@@ -37,11 +37,10 @@ if __name__ == '__main__':
     cursor.execute(query, (state_name,))
     results = cursor.fetchall()
 
-    if (results):
-        unique_results = set(results)
-        cities = [city[0] for city in unique_results]
-
-        print(', '.join(cities))
-
     cursor.close()
     db.close()
+
+    if (results):
+        cities = [city[0] for city in results]
+
+        print(', '.join(cities))
