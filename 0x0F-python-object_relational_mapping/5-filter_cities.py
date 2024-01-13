@@ -15,8 +15,7 @@ host = 'localhost'
 port = 3306
 
 
-def main():
-    '''This is the main program'''
+if __name__ == '__main__':
 
     db = MySQLdb.connect(
             host=host,
@@ -46,7 +45,3 @@ def main():
 
     cursor.close()
     db.close()
-
-
-if __name__ == '__main__':
-    main()
