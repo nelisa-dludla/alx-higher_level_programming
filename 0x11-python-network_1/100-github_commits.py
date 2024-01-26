@@ -13,7 +13,9 @@ if __name__ == '__main__':
     url = f'https://api.github.com/repos/{owner_name}/{repo_name}/commits'
     res = get(url)
     commits = res.json()
-    sorted_commits = sorted(commits, key=lambda x: x['commit']['author']['date'], reverse=True)
+    sorted_commits = sorted(commits,
+                            key=lambda x: x['commit']['author']['date'],
+                            reverse=True)
 
     for commit in sorted_commits[:10]:
         sha = commit.get('sha')
