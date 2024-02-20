@@ -29,7 +29,7 @@ const fetchAndProcessData = async () => {
   }
 
   const result = JSON.stringify(completedTasks, null, 2).replace('{\n', '{').replace('\n}', ' }');
-  const formattedResult = result.replace('{  ', '{ ');
+  const formattedResult = result.replace('{  ', '{ ').replace(/"/g, "'");
   console.log(formattedResult);
 };
 
