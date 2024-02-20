@@ -28,7 +28,7 @@ const fetchAndProcessData = async () => {
     completedTasks[`${i}`] = completedArr.length;
   }
 
-  console.log(JSON.stringify(completedTasks, null, 2).replace("'", '"'));
+  console.log(JSON.stringify(completedTasks, null, 2).replace(/"/g, "'"));
 };
 
 fetchAndProcessData();
