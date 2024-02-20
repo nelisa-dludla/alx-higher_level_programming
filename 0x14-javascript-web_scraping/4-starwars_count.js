@@ -2,13 +2,12 @@
 
 const request = require('request');
 const url = process.argv[2];
-const characterId = 18;
 
 const findActor = (obj, id) => {
   let isFound = false;
 
   for (let i = 0; i < obj.characters.length; i++) {
-    if (obj.characters[i] === `https://swapi-api.alx-tools.com/api/people/${characterId}/`) {
+    if (obj.characters[i] === 'https://swapi-api.alx-tools.com/api/people/18/') {
       isFound = true;
     }
   }
